@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        applicationId "com.qiezitv"
+        minSdkVersion 23
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0.0"
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a", "x86", "mips"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    // 签名配置
+    // keytool -genkey -v -keystore keystore.jks
+    // CN=wufan, OU=qiezitv, O=qiezitv, L=fuzhou, ST=fujian, C=CN
+    signingConfigs {
+        config {
+            keyAlias 'qiezioneyuan'
+            keyPassword 'qiezitv'
+            storeFile file('../keystore.jks')
+            storePassword 'qiezitv'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug{
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libx264.libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation project(path: ':sopcast-sdk')
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.scwang.smart:refresh-layout-kernel:2.0.1'
+    implementation 'com.scwang.smart:refresh-header-classics:2.0.1'
+    implementation 'com.scwang.smart:refresh-footer-classics:2.0.1'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation 'com.orhanobut:dialogplus:1.11@aar'
+    implementation 'com.contrarywind:Android-PickerView:4.1.9'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.wanjian:cockroach:0.0.5'
+    compileOnly "org.projectlombok:lombok:1.18.16"
+    annotationProcessor 'org.projectlombok:lombok:1.18.16'
+//    implementation 'com.afollestad.material-dialogs:bottomsheets:3.2.1'
+}

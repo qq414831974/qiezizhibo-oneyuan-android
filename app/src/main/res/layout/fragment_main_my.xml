@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_color"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_login_out"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/layer_button_bg_primary"
+        android:text="退出登入"
+        android:textColor="#ffffff" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/base_title_background_color">
+
+        <ImageView
+            android:id="@+id/iv_sys_setting"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_setting" />
+
+        <!--系统设置按钮-->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我的"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:clickable="false">
+
+        <!--头像-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/iv_user_picture"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <!--用户昵称-->
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                tools:text="UserName" />
+
+            <!--手机号-->
+            <TextView
+                android:id="@+id/tv_user_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="手机号"
+                android:textColor="#7c7c7c"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_user_picture"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_user_picture"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

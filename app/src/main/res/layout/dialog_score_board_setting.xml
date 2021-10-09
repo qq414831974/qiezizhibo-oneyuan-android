@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_circle_popup"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingTop="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主队颜色"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/iv_host_color"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:background="#ff9900" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="主队名"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_host_name"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:maxWidth="200dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="客队颜色"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/iv_guest_color"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:background="#ff0066" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="客队名"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_guest_name"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:maxWidth="200dp"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <Switch
+            android:id="@+id/switch_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="50px"
+            android:paddingRight="50px"
+            android:text="显示logo"
+            android:thumbTint="@color/btn_blue_pre"
+            android:trackTint="@color/activity_main_bottom_text_color" />
+
+        <Switch
+            android:id="@+id/switch_scoreboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="50px"
+            android:paddingRight="50px"
+            android:text="显示比分牌"
+            android:thumbTint="@color/btn_blue_pre"
+            android:trackTint="@color/activity_main_bottom_text_color" />
+    </LinearLayout>
+
+</LinearLayout>

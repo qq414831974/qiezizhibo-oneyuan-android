@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textColor="#000000"
+        tools:text="2020全民健身运动会暨“我爱足球”中国足球民间争霸赛南平市足球协会第三届业余足球联赛 第二轮 建阳红运箭竹VS武夷山市足球队" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        tools:text="2020/07/08 15:00:00" />
+
+    <Button
+        android:id="@+id/btn_live"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/layer_button_bg_primary"
+        android:text="统计+直播"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/layer_button_bg_primary"
+        android:text="取消"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+</LinearLayout>

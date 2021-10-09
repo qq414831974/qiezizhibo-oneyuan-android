@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimaryBlack">@android:color/background_dark</color>
+
+    <!--App整体 background颜色-->
+    <color name="app_background_color">#F6F6F6</color>
+
+    <!--base_title_bar 背景颜色-->
+    <color name="base_title_background_color">#676767</color>
+
+    <!--主页底部颜色-->
+    <color name="activity_main_bottom_text_color">#929292</color>
+
+    <color name="btn_blue_pre">#5FB9EA</color>
+
+    <color name="btn_background_transparent_color">#99D3D3D3</color>
+
+    <color name="shape_network_status_good_color">#00C853</color>
+    <color name="shape_network_status_bad_color">#DD2C00</color>
+
+</resources>

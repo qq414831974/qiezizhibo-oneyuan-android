@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/scoreboard_setting"
+        android:title="比分牌设置"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/live_setting"
+        android:title="直播设置"
+        app:showAsAction="never" />
+</menu>

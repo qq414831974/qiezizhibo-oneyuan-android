@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textSize="16sp"
+        tools:text="2020全民健身运动会暨“我爱足球”中国足球民间争霸赛南平市足球协会第三届业余足球联赛" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp">
+
+        <ImageView
+            android:id="@+id/iv_league"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            tools:src="@drawable/ic_user_picture" />
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/iv_league"
+            android:textSize="15sp"
+            tools:text="福州市" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/tv_city"
+            android:textSize="13sp"
+            tools:text="状态unKnow" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_league"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_league"
+            android:textSize="13sp"
+            tools:text="2020/07/11 - 2020/09/05" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

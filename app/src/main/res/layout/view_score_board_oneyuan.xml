@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="600px"
+    android:layout_height="232px">
+
+    <LinearLayout
+        android:id="@+id/ll_host_color"
+        android:layout_width="300px"
+        android:layout_height="70px"
+        android:layout_marginLeft="200px"
+        android:layout_marginTop="45px"
+        android:background="#ff9900"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/ll_guest_color"
+        android:layout_width="300px"
+        android:layout_height="70px"
+        android:layout_marginLeft="200px"
+        android:layout_marginTop="118px"
+        android:background="#ff0066"
+        android:orientation="horizontal" />
+
+    <ImageView
+        android:id="@+id/iv_scoreboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_scoreboard_oneyuan" />
+
+    <TextView
+        android:id="@+id/tv_score_host"
+        android:layout_width="140px"
+        android:layout_height="65px"
+        android:layout_marginLeft="460px"
+        android:layout_marginTop="48px"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="98"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="58px"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tv_score_guest"
+        android:layout_width="140px"
+        android:layout_height="65px"
+        android:layout_marginLeft="450px"
+        android:layout_marginTop="118px"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="102"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="58px"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tv_section"
+        android:layout_width="105px"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="80px"
+        android:layout_marginTop="0px"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="#F98609"
+        android:textSize="90px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_team_name_left"
+        android:layout_width="245px"
+        android:layout_height="65px"
+        android:layout_marginLeft="220px"
+        android:layout_marginTop="48px"
+        android:gravity="center"
+        android:text="厦门大学嘉庚学院"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="30px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_team_name_right"
+        android:layout_width="245px"
+        android:layout_height="65px"
+        android:layout_marginLeft="218px"
+        android:layout_marginTop="118px"
+        android:gravity="center"
+        android:text="福州大学至诚学院"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="30px"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_scoreboard_logo_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_scoreboard_oneyuan_logo_mask" />
+
+</FrameLayout>

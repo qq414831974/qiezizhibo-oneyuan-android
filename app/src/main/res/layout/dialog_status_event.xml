@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="30px">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30px">
+
+        <ImageView
+            android:id="@+id/iv_event_ic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_result_ball" />
+
+        <TextView
+            android:id="@+id/tv_event_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="比赛开始"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:id="@+id/ll_against_index"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择对阵"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:id="@+id/ll_against"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/layer_highlight"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tv_host_team_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="足球足球足球"
+                    android:maxWidth="90dp"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/iv_host_team_img"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_oneyuan" />
+
+                <TextView
+                    android:id="@+id/tv_score"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="99-99"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/iv_guest_team_img"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_oneyuan" />
+
+                <TextView
+                    android:id="@+id/tv_guest_team_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="足球足球足球"
+                    android:maxWidth="90dp"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/layer_button_bg_primary"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:text="确定"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>
